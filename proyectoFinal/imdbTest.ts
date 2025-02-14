@@ -1,13 +1,13 @@
-import { imdb } from "./imdb";
+import { Imdb } from "./imdb";
+import { Movie } from "./movie";
 import { myMovies } from "./movieTest";
 
-const imdb1= new imdb(myMovies)
-console.log(imdb1.showData())
-console.log(JSON.stringify(imdb1));
-import {writeFileSync, readFileSync} from "fs"; 
-writeFileSync("imdbBBDD.json", JSON.stringify(imdb1))
-let fs = require('fs');
-fs.readFileSync
-
+const imdb= new Imdb(myMovies)
+// console.log(imdb.showData())
+imdb.escribirEnFicheroJson(`imdbBBDD.json`);
+const loadedIMDB=Imdb.obtenerInstanciaIMDB(`imdbBBDD.json`)
+console.log('peliculas cargadas desde el archivo JSON:');
+loadedIMDB.peliculas.forEach(movie => movie.showData() );
+console.log(loadedIMDB)
 
 
