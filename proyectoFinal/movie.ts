@@ -15,6 +15,7 @@ export class Movie {
     public producer: string
     public distributor: string
     public genre: string
+    static title: any
     constructor(title:string, releaseYear: number, nacionality: string, genre: string){
         this.title= title
         this.releaseYear= releaseYear
@@ -31,6 +32,8 @@ export class Movie {
         this.lenguage= "español"
     }
     public showData():string{
-        return "titulo: -"+this.title+"\n" +"año de lanzamineto: -"+this.releaseYear+"\n" + "actor/actriz: -"+ this.actor+ "\n" + "guionista: -"+ this.writter+"\n" +"idioma: -"+this.lenguage+"\n" +"plataforma: -"+this.plataforma+"\n" +"es MCU: -"+this.isMCU+"\n" +"personaje principal: -"+this.mainCharacterName+"\n" +"productor: -"+this.producer+"\n" +"distribuidor: -"+this.distributor+"\n" +"genero: -"+this.genre
+        return "titulo: -"+this.title+"\n" +"año de lanzamineto: -"+this.releaseYear+"\n" + "actor/actriz: -"+ this.actor + "\n" + "guionista: -"+ this.writter+"\n" +"idioma: -"+this.lenguage+"\n" +"plataforma: -"+this.plataforma+"\n" +
+        "es MCU: -"+this.isMCU+"\n" +"personaje principal: -"+this.mainCharacterName+"\n" +"productor: -"+this.producer+"\n" +
+        "distribuidor: -"+this.distributor+"\n" +"genero: -"+this.genre
     }
 }

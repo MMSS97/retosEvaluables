@@ -7,3 +7,4 @@ var movie1 = new movie_1.Movie("tomb raider", 2000, "EEUU", "accion");
 var movie2 = new movie_1.Movie("seven nation army", 2025, "EEUU", "psicologica");
 var movie3 = new movie_1.Movie("Drive", 2025, "EEUU", "accion");
 exports.myMovies = [movie1, movie2, movie3];
+// console.log(myMovies[1], myMovies[2], myMovies[0]);

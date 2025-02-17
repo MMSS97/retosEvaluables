@@ -7,7 +7,16 @@ export class Professional {
     public nacionality: string
     public oscarsNumber: number
     public profession: string
-    constructor(name: string, age: number, weight: number, heaight: number, isRetired: boolean, nacionality: string, oscarsNumber: number, profession: string){
+    constructor(
+        name: string,
+        age: number, 
+        weight: number, 
+        heaight: number, 
+        isRetired: boolean, 
+        nacionality: string, 
+        oscarsNumber: number, 
+        profession: string
+    ){
         this.name=name
         this.age=age
         this.weight=weight

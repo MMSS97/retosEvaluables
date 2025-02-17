@@ -20,7 +20,9 @@ var Movie = /** @class */ (function () {
         this.lenguage = "español";
     }
     Movie.prototype.showData = function () {
-        return "titulo: -" + this.title + "\n" + "año de lanzamineto: -" + this.releaseYear + "\n" + "actor/actriz: -" + this.actor + "\n" + "guionista: -" + this.writter + "\n" + "idioma: -" + this.lenguage + "\n" + "plataforma: -" + this.plataforma + "\n" + "es MCU: -" + this.isMCU + "\n" + "personaje principal: -" + this.mainCharacterName + "\n" + "productor: -" + this.producer + "\n" + "distribuidor: -" + this.distributor + "\n" + "genero: -" + this.genre;
+        return "titulo: -" + this.title + "\n" + "año de lanzamineto: -" + this.releaseYear + "\n" + "actor/actriz: -" + this.actor + "\n" + "guionista: -" + this.writter + "\n" + "idioma: -" + this.lenguage + "\n" + "plataforma: -" + this.plataforma + "\n" +
+            "es MCU: -" + this.isMCU + "\n" + "personaje principal: -" + this.mainCharacterName + "\n" + "productor: -" + this.producer + "\n" +
+            "distribuidor: -" + this.distributor + "\n" + "genero: -" + this.genre;
     };
     return Movie;
 }());
