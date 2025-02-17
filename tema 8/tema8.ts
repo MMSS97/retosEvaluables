@@ -1,5 +1,5 @@
 export class Vector {
-    private elements:number[]
+    private elements:number []
     constructor(n:number , k:number) {
         let vector : number [] = [];
         for (let i=0;i<n;i++) {
